@@ -1,0 +1,66 @@
+/**
+  #2c3e50 midnight blue https://flatuicolors.com/palette/defo
+*/
+header {
+  font-family: -apple-system;
+}
+.row-1 {
+  background-color: #2c3e50;
+  color: #ffffff;
+  height: 4rem;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.header-col-1 {
+  width: 85%;
+  padding: 0 4%;
+  box-sizing: border-box
+}
+.header-col-2 {
+  width: 15%;
+  box-sizing: border-box
+}
+.row-2 {
+  color: #2c3e50;;
+  height: 4rem;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-sizing: border-box;
+}
+.txt2 {
+  font-size: 30px;
+  height: 100%;
+  text-align: center;
+}
+.row-2:hover {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+figure.img-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+figure.img-container.logo {
+  background-image: url("src/assets/img/logo_ucenfotec.svg");
+  cursor: pointer;
+}
+.accordion-button {
+  font-size: 23px;
+}
+.accordion-button:hover {
+  background: rgba(44,62,80,0.5);
+  border-color: white;
+}
+div.container {
+  width: 100%;
+}
+#list-deplegable1, #list-deplegable2 {
+  color: black;
+}

@@ -1,0 +1,94 @@
+<form class="form-container" id="contactoForm">
+  <input type="text" class="form-control" id="id" disabled [(ngModel)]="id" [ngModelOptions]="{standalone: true}">
+  <div class="container1">
+    <div class="container1-row">
+      <div class="container1-row-col1">
+        <div class="container-col-col1">
+          <label for="firstName">Nombre</label>
+        </div>
+        <div class="container-col-col2">
+          <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Nombre" [(ngModel)]="firstName">
+        </div>
+      </div>
+      <div class="container1-row-col2">
+        <div class="container-col-col1">
+          <label for="lastName">Apellido</label>
+        </div>
+        <div class="container-col-col2">
+          <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Apellido" [(ngModel)]="lastName"/>
+        </div>
+      </div>
+    </div>
+    <div class="container1-row">
+      <div class="container1-row-col1">
+        <div class="container-col-col1">
+          <label for="email">Correo Electrónico</label>
+        </div>
+        <div class="container-col-col2">
+          <input type="text" class="form-control" name="email" id="email" placeholder="Correo Electrónico" [(ngModel)]="email"/>
+        </div>
+      </div>
+      <div class="container1-row-col2">
+        <div class="container-col-col1">
+          <label for="phoneNumber">Número Teléfonico</label>
+        </div>
+        <div class="container-col-col2">
+          <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="Número Teléfonico" [(ngModel)]="phoneNumber"/>
+        </div>
+      </div>
+    </div>
+    <div class="container1-row">
+      <div class="container1-row-col1">
+        <div class="container-col-col1">
+          <label for="addressLine1">Dirección 1</label>
+        </div>
+        <div class="container-col-col2">
+          <input type="text" class="form-control" name="addressLine1" id="addressLine1" placeholder="Dirección 1" [(ngModel)]="addressLine1"/>
+        </div>
+      </div>
+      <div class="container1-row-col2">
+        <div class="container-col-col1">
+          <label for="addressLine2">Dirección 2</label>
+        </div>
+        <div class="container-col-col2">
+          <input type="text" class="form-control" name="addressLine2" id="addressLine2" placeholder="Dirección 2" [(ngModel)]="addressLine2"/>
+        </div>
+      </div>
+    </div>
+    <div class="container1-row">
+      <div class="container1-row-col1">
+        <div class="container-col-col1">
+          <label for="country">País</label>
+        </div>
+        <div class="container-col-col2">
+          <input type="text" class="form-control" name="country" id="country" placeholder="País" [(ngModel)]="country"/>
+        </div>
+      </div>
+      <div class="container1-row-col2">
+        <div class="container-col-col1">
+          <label for="province">Provincia</label>
+        </div>
+        <div class="container-col-col2">
+          <input type="text" class="form-control" name="province" id="province" placeholder="Provincia" [(ngModel)]="province"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="container2-row">
+      <button class="btn btn-success" (click)="createContact()">Crear</button>
+    </div>
+    <div class="container2-row">
+      <button class="btn btn-primary" (click)="updateContact()">Actualizar</button>
+    </div>
+    <div class="container2-row">
+      <button class="btn btn-secondary" (click)="clearForm()">Limpiar formulario</button>
+    </div>
+    <div class="container2-row">
+      <button class="btn btn-danger" (click)="deleteContact()">Eliminar</button>
+    </div>
+
+  </div>
+
+
+</form>

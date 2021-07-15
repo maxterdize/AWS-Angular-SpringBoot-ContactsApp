@@ -1,0 +1,50 @@
+<body>
+<header>
+  <div class="row-1">
+    <div class="header-col-1">
+      <H3>
+        Contactos
+      </H3>
+    </div>
+    <div class="header-col-2">
+      <figure class="img-container logo hov" onclick="window.open('https://www.ucenfotec.ac.cr/'); return false;"
+              title="www.ucenfotec.ac.cr" href="https://www.ucenfotec.ac.cr/"></figure>
+    </div>
+  </div>
+  <div class="row-2">
+    <h4 class="txt2">Proyecto Diseño y Construcción de Componentes SC16</h4>
+  </div>
+
+</header>
+
+  <div class="container">
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button id="list-deplegable1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Formulario de Contacto
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <app-formulario-contacto></app-formulario-contacto>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button id="list-deplegable2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Tabla de Contactos
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <app-tabla-contactos></app-tabla-contactos>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>

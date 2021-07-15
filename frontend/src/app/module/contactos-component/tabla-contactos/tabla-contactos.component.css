@@ -1,0 +1,65 @@
+form {
+  font-family: -apple-system;
+  font-size: 20px;
+  border-top: solid 1px #2c3e50;
+  border-bottom: solid 1px #2c3e50;
+}
+form:hover {
+  background: rgba(44,62,80,0.1);
+}
+
+#identificadorContacto{
+  background: inherit;
+  width: 95%;
+}
+.container1-row-col1 {
+  display: flex;
+  margin: 1.5rem 0px 1.5rem 0px;
+}
+
+.container-col-col1 {
+  width: 15%;
+  margin-left: 1rem;
+}
+.container-col-col2 {
+  width: 85%;
+  right: 1rem;
+  /*padding-right: 20px;*/
+}
+.container2 {
+  display: flex;
+  margin: 10px 0px 10px 0px;
+  box-sizing: border-box;
+  border-top-color: black;
+}
+.container2-row-col {
+  width: 33%;
+  margin-left: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.table {
+  font-family: -apple-system;
+  font-size: 20px;
+}
+
+.list-group-item-action {
+  line-height: 2rem;
+}
+.list-group-item-action:hover {
+  background: rgba(44,62,80,0.5);
+  color: #ffffff;
+}
+.headTable {
+  background: rgba(44,62,80,0.2);
+}
+
+.table-responsive {
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  /*-webkit-overflow-scrolling: auto;*/
+  -webkit-appearance: none;
+}

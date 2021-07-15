@@ -1,0 +1,51 @@
+<form>
+  <div class="container1-row-col1">
+    <div class="container-col-col1">
+      <label for="identificadorContacto">Filtrar por id</label>
+    </div>
+    <div class="container-col-col2">
+      <input type="text" class="form-control" name="identificadorContacto" id="identificadorContacto" placeholder="Ingrese el id" [(ngModel)]="identificadorContacto">
+    </div>
+  </div>
+  <div class="container2">
+    <div class="container2-row-col">
+      <button class="btn btn-primary" (click)="getContactoById()">Ejecutar filtro</button>
+    </div>
+    <div class="container2-row-col">
+      <button class="btn btn-secondary" (click)="clearFilter()">Limpiar filtro</button>
+    </div>
+
+  </div>
+</form>
+
+<div class="table-responsive mt-4">
+
+<table class="table text-center">
+  <thead>
+  <tr class="headTable">
+    <th>Consecutivo</th>
+    <th>Identificación</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Teléfono</th>
+    <th>Correo</th>
+    <th>Dirección 1</th>
+    <th>Dirección 2</th>
+    <th>Provincia</th>
+    <th>País</th>
+
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr app-item-contacto
+    *ngFor="let contacto of arregloContactos; let i = index"
+    class="list-group-item-action"
+      [contacto]="contacto"
+      [i]="i"
+  >
+
+  </tr>
+  </tbody>
+</table>
+</div>
